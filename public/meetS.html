@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <title>Meeting Scheduler</title>
+</head>
+<body>
+    <div id="box-1">
+        <div id="slot-details">
+            <ul>
+               <li id="firstSlot">
+                  <p>2:00 PM</p>
+                  <p id="sl1" class="sl"></p>
+               </li>
+               <li id="secondSlot">
+                    <p>2:30 PM</p>
+                    <p id="sl2" class="sl"></p>
+               </li>
+               <li id="thirdSlot">
+                    <p>3:00 PM</p>
+                    <p id="sl3" class="sl"></p>
+               </li>
+               <li id="fourthSlot">
+                    <p>3:30 PM</p>
+                    <p id="sl4" class="sl"></p>
+               </li>
+            </ul>
+        </div>
+        <div id="user-form">
+            <form>
+                <p>
+                       <label for="name">
+                        Enter your name:
+                       </label>
+                       <input type="text" id="name" placeholder="Type here..." required>
+                </p>
+                <p>
+                       <label for="email">
+                        Enter your email:
+                       </label>
+                       <input type="email" id="email" placeholder="Type here..." required>
+                </p>
+               <button type="click" id="form-btn">Confirm Slot</button>
+            </form>
+        </div>
+        <div id="confirm-msg">
+             <h4 id="show-pop"></h4>
+        </div>
+    </div>
+    <div id="slot-lists">
+        <ul id="showlists">
+         
+            
+        </ul>
+    </div>
+    <script src="/logic.js"></script>
+</body>
+</html>
